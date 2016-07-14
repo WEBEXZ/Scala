@@ -20,10 +20,12 @@ object Persona {
       case _ => "No existe"
     })
   }
-  def listaEdades(): Unit = {
-    val edades = Array(10, 17, 20, 22, 40)
-    edades.apply(3)
-    edades.length
+  def cuadrado(x: Int): Int = x * x
+  def listaNumeros(): Unit = {
+    val numeros = List(10, 17, 20, 22, 40)
+    numeros.apply(3)
+    numeros.length
+    println(numeros.map { x => cuadrado(x)})
   }
 }
 
