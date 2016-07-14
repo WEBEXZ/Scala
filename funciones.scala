@@ -1,6 +1,6 @@
 object Persona {
   def saludar(nombre: String): Unit = {
-    println("Hola " + nombre)
+    println(s"Hola ${nombre}")
   }
   def mostrarSuma(x: Int): Unit = {
     println(x)
@@ -19,6 +19,11 @@ object Persona {
       case "d" => "Domingo"
       case _ => "No existe"
     })
+  }
+  def listaEdades(): Unit = {
+    val edades = Array(10, 17, 20, 22, 40)
+    edades.apply(3)
+    edades.length
   }
 }
 
