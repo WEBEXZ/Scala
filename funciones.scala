@@ -23,8 +23,10 @@ object Persona {
   def cuadrado(x: Int): Int = x * x
   def listaNumeros(): Unit = {
     val numeros = List(10, 17, 20, 22, 40)
+    val edades = List(List(10, 11, 12), List(13, 14, 15), List(16, 17, 18))
     numeros.apply(3)
     numeros.length
+    println(edades.flatten)
     println(numeros.map { x => cuadrado(x)})
   }
 }
